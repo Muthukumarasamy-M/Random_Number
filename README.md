@@ -20,7 +20,3 @@ Feel free to explore the project, and have fun with the random number generator!
 - `index.html`: The main HTML file containing the structure of the web page.
 - `style.css`: The CSS file for styling the web page.
 - `index.js`: The JavaScript file containing the logic for generating random numbers.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
