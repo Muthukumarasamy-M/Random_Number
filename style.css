@@ -1,0 +1,44 @@
+body {
+  font-family: verdana;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: beige;
+}
+#container {
+  height: 250px;
+  width: 400px;
+  background-color: rgb(197, 234, 221);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+#mybutton {
+  font-size: 2em;
+  padding: 5px 25px;
+  margin: 20px 25px;
+  border-radius: 5px;
+
+  background-color: rgb(254, 254, 254);
+  transition: background-color 0.25s;
+  border: 1px solid #4b4b4b; /* Add a color of your choice instead of #000 */
+}
+#mybutton:hover {
+  background-color: rgb(205, 193, 193);
+}
+#mylabel {
+  font-size: 3em;
+  margin-top: 20px;
+  display: block;
+  color: rgb(254, 29, 29);
+}
+input {
+  height: 30px;
+  padding: 3px;
+  margin: 20px 10px;
+  color: rgb(0, 0, 0);
+}
+input::placeholder {
+  color: rgb(44, 42, 42);
+}
