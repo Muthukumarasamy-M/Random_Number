@@ -1,13 +1,17 @@
-const num = document.getElementById("mylabel");
-const btn = document.getElementById("mybutton");
-const max = document.getElementById("max");
-const min = document.getElementById("min");
-btn.onclick = function () {
-  let m = Number(max.value);
-  let n = Number(min.value);
-  if (Boolean(m) & Boolean(n)) {
-    num.textContent = Math.floor(Math.random() * (m - n + 1)) + n;
+const numLabel = document.getElementById("mylabel");
+const shuffleButton = document.getElementById("mybutton");
+const maxInput = document.getElementById("max");
+const minInput = document.getElementById("min");
+
+shuffleButton.addEventListener("click", () => {
+  const maxNumber = Number(maxInput.value);
+  const minNumber = Number(minInput.value);
+
+  if (!isNaN(maxNumber) && !isNaN(minNumber)) {
+    const randomNumber =
+      Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+    numLabel.textContent = randomNumber;
   } else {
-    num.textContent = "";
+    numLabel.textContent = "";
   }
-};
+});

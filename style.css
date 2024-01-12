@@ -27,16 +27,15 @@ body {
   padding: 5px 25px;
   margin: 20px 25px;
   border-radius: 5px;
-
+  cursor: pointer;
   background-color: rgb(255, 255, 255);
-  transition: background-color 0.25s;
   border: 1px solid #4b4b4b;
+  transition: transform 0.7s ease-in-out;
 }
-
 #mybutton:hover {
-  background-color: rgb(232, 227, 227);
+  /* Apply a 3D effect on hover */
+  transform: perspective(500px) rotateX(180deg);
 }
-
 #mylabel {
   font-size: 3em;
   margin-top: 20px;
@@ -46,9 +45,10 @@ body {
 
 input {
   height: 30px;
+  width: 170px;
   padding: 6px;
   margin: 20px 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(0, 0, 0);
 }
 
